@@ -1,7 +1,11 @@
 /* Google Font import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap'); */
 
 /* Reset and base styles */
+*{
+    background-color: rgb(233, 233, 233);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +18,13 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #1a2a38;
+    color: #06760d;
     line-height: 1.6;
 }
 
 /* Header styles */
 #mainHeader {
-    background: rgba(0, 80, 128, 0.9);
+    background: rgba(236, 18, 131, 0.096);
     color: white;
     padding: 20px 30px;
     text-align: center;
@@ -63,7 +67,7 @@ nav a:focus {
 .heroSection h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #00334d;
+    color: #1e4d00;
 }
 
 .heroText {
@@ -106,7 +110,7 @@ nav a:focus {
 
 .eventCard h3 {
     margin-bottom: 10px;
-    color: #004a73;
+    color: #730054;
 }
 
 .eventCard p {
@@ -177,7 +181,7 @@ textarea {
 input:focus,
 textarea:focus {
     outline: 2px solid rgba(0, 120, 190, 0.4);
-    border-color: #0077b6;
+    border-color: #b6820030;
 }
 
 .cta-button {
@@ -193,7 +197,7 @@ textarea:focus {
 }
 
 .cta-button:hover {
-    background-color: #0056d6;
+    background-color: #35d600;
     transform: translateY(-1px);
 }
 
