@@ -4,114 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Community Event Portal</title>
-    
-    <!-- 1 Linking External Stylesheet   -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- 1) Internal/Embedded CSS -->
     <style>
+        /* Embedded CSS: body background */
         body {
-           
-            background-color: #f4f7f6; 
+            background: linear-gradient(180deg, rgba(230, 245, 255, 1) 0%, rgba(210, 235, 245, 1) 45%, rgba(240, 250, 255, 1) 100%);
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Exercise 3: ID Selector for the banner -->
     <header id="mainHeader">
-        <!-- Exercise 1: Inline Style Applied Here -->
-        <h1 style="color: #ff3333;">Local Community Event Portal</h1>
-        
-        <!-- Exercise 6: Nav Menu List -->
+        <h1 style="color:red;">Community Events Hub</h1>
         <nav>
-            <ul class="nav-menu">
-                <li><a href="#events">Upcoming Events</a></li>
-                <li><a href="#schedule">Schedule Table</a></li>
-                <li><a href="#bulletin">Community Bulletin</a></li>
+            <ul class="navMenu">
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#table">Admin</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        
-        <!-- Exercise 3 & 4: Section with Gradient Header -->
-        <section id="events">
-            <h2 class="section-title">Featured Events</h2>
-            
-            <div class="events-grid">
-                <!-- Exercise 3, 4 & 8: Event Cards -->
-                <div class="eventCard">
-                    <h3>Summer Food Festival</h3>
-                    <p class="event-desc">Enjoy gourmet food trucks, live local music, and family activities downtown.</p>
-                    <a href="#" class="cta-button">Register Now</a>
-                </div>
+    <main>
+        <section class="heroSection">
+            <h2>Welcome to the Local Community Event Portal</h2>
+            <p class="heroText">Discover events, news, and volunteer opportunities across your neighborhood.</p>
+        </section>
 
-                <div class="eventCard">
-                    <h3>Charity 5K Run</h3>
-                    <p class="event-desc">Lace up your running shoes and support our local children's hospital shelter.</p>
-                    <a href="#" class="cta-button">Join Race</a>
-                </div>
+        <section id="upcoming" class="eventSection">
+            <h2>Upcoming Events</h2>
+            <div class="eventCard">
+                <h3>Park Cleanup Day</h3>
+                <p>Join volunteers for a community park cleanup and picnic on Saturday.</p>
+            </div>
+            <div class="eventCard">
+                <h3>Farmers Market</h3>
+                <p>Fresh local produce, artisan crafts, and live music every Sunday.</p>
+            </div>
+            <div class="eventCard">
+                <h3>Summer Concert</h3>
+                <p>Enjoy an outdoor concert featuring local bands and food trucks.</p>
             </div>
         </section>
 
-        <!-- Exercise 7: Table Styling Section -->
-        <section id="schedule">
-            <h2 class="section-title">Event Schedule</h2>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Event Name</th>
-                            <th>Date</th>
-                            <th>Location</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Summer Food Festival</td>
-                            <td>June 15</td>
-                            <td>Main Street Park</td>
-                        </tr>
-                        <tr>
-                            <td>Charity 5K Run</td>
-                            <td>June 22</td>
-                            <td>Community Stadium</td>
-                        </tr>
-                        <tr>
-                            <td>Town Hall Meeting</td>
-                            <td>July 05</td>
-                            <td>City Hall Auditorium</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Exercise 9: Multiple Columns Section -->
-        <section id="bulletin">
-            <h2 class="section-title">Community Bulletin</h2>
-            <article class="news-article">
-                <h3>A Letter From the Mayor</h3>
-                <p>Our community continues to grow stronger through active participation and shared values. This summer season brings a renewed focus on public parks, clean energy initiatives, and local neighborhood gatherings. We invite all families to join our weekly outdoor activities and share feedback at city hall.</p>
-                <p>We are also looking for volunteers to help organize the annual fall parade. If you have skills in event coordination, marketing, or logistics, please stop by our central booth during any featured weekend event to register your interest.</p>
+        <section id="news" class="newsSection">
+            <h2>Community Bulletin</h2>
+            <article class="newsArticle">
+                <p>Our city council is funding new playground equipment at Maple Park. Volunteers are welcome to help assemble and test the new installation.</p>
+                <p>Local artists are invited to submit murals for the downtown arts walk. Learn more at the next town hall meeting.</p>
             </article>
         </section>
 
-        <!-- Exercise 8: Interactive Form for Box Model Testing -->
-        <section id="contact">
-            <h2 class="section-title">Stay Updated</h2>
-            <form class="subscribe-form">
-                <input type="email" placeholder="Enter your email address" aria-label="Email" required>
-                <button type="submit" class="cta-button">Subscribe</button>
-            </form>
-            
-            <!-- Exercise 8: Visibility vs Display demo tags -->
-            <p class="hidden-element-demo">You cannot see this text (display none).</p>
-            <p class="invisible-element-demo">This space looks empty, but the element takes up layout room (visibility hidden).</p>
+        <section id="table" class="adminSection">
+            <h2>Event Admin Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Park Cleanup</td>
+                        <td>June 12</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Farmers Market</td>
+                        <td>June 14</td>
+                        <td>Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td>Summer Concert</td>
+                        <td>June 20</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-    </main>
+        <section id="contact" class="contactSection">
+            <h2>Contact & Participation</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
 
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Tell us how you want to help"></textarea>
+
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
