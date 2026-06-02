@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+    
+    <!-- 1 Linking External Stylesheet   -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 1) Internal/Embedded CSS -->
+    <style>
+        body {
+           
+            background-color: #f4f7f6; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Exercise 3: ID Selector for the banner -->
+    <header id="mainHeader">
+        <!-- Exercise 1: Inline Style Applied Here -->
+        <h1 style="color: #ff3333;">Local Community Event Portal</h1>
+        
+        <!-- Exercise 6: Nav Menu List -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#schedule">Schedule Table</a></li>
+                <li><a href="#bulletin">Community Bulletin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- Exercise 3 & 4: Section with Gradient Header -->
+        <section id="events">
+            <h2 class="section-title">Featured Events</h2>
+            
+            <div class="events-grid">
+                <!-- Exercise 3, 4 & 8: Event Cards -->
+                <div class="eventCard">
+                    <h3>Summer Food Festival</h3>
+                    <p class="event-desc">Enjoy gourmet food trucks, live local music, and family activities downtown.</p>
+                    <a href="#" class="cta-button">Register Now</a>
+                </div>
+
+                <div class="eventCard">
+                    <h3>Charity 5K Run</h3>
+                    <p class="event-desc">Lace up your running shoes and support our local children's hospital shelter.</p>
+                    <a href="#" class="cta-button">Join Race</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7: Table Styling Section -->
+        <section id="schedule">
+            <h2 class="section-title">Event Schedule</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Summer Food Festival</td>
+                            <td>June 15</td>
+                            <td>Main Street Park</td>
+                        </tr>
+                        <tr>
+                            <td>Charity 5K Run</td>
+                            <td>June 22</td>
+                            <td>Community Stadium</td>
+                        </tr>
+                        <tr>
+                            <td>Town Hall Meeting</td>
+                            <td>July 05</td>
+                            <td>City Hall Auditorium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercise 9: Multiple Columns Section -->
+        <section id="bulletin">
+            <h2 class="section-title">Community Bulletin</h2>
+            <article class="news-article">
+                <h3>A Letter From the Mayor</h3>
+                <p>Our community continues to grow stronger through active participation and shared values. This summer season brings a renewed focus on public parks, clean energy initiatives, and local neighborhood gatherings. We invite all families to join our weekly outdoor activities and share feedback at city hall.</p>
+                <p>We are also looking for volunteers to help organize the annual fall parade. If you have skills in event coordination, marketing, or logistics, please stop by our central booth during any featured weekend event to register your interest.</p>
+            </article>
+        </section>
+
+        <!-- Exercise 8: Interactive Form for Box Model Testing -->
+        <section id="contact">
+            <h2 class="section-title">Stay Updated</h2>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email address" aria-label="Email" required>
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+            
+            <!-- Exercise 8: Visibility vs Display demo tags -->
+            <p class="hidden-element-demo">You cannot see this text (display none).</p>
+            <p class="invisible-element-demo">This space looks empty, but the element takes up layout room (visibility hidden).</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
