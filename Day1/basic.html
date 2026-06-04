@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+    <style>
+        /* Embedded CSS: body background */
+        body {
+            background: linear-gradient(180deg, rgba(230, 245, 255, 1) 0%, rgba(210, 235, 245, 1) 45%, rgba(240, 250, 255, 1) 100%);
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <h1 style="color:red;">Community Events Hub</h1>
+        <nav>
+            <ul class="navMenu">
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#table">Admin</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="heroSection">
+            <h2>Welcome to the Local Community Event Portal</h2>
+            <p class="heroText">Discover events, news, and volunteer opportunities across your neighborhood.</p>
+        </section>
+
+        <section id="upcoming" class="eventSection">
+            <h2>Upcoming Events</h2>
+            <div class="eventCard">
+                <h3>Park Cleanup Day</h3>
+                <p>Join volunteers for a community park cleanup and picnic on Saturday.</p>
+            </div>
+            <div class="eventCard">
+                <h3>Farmers Market</h3>
+                <p>Fresh local produce, artisan crafts, and live music every Sunday.</p>
+            </div>
+            <div class="eventCard">
+                <h3>Summer Concert</h3>
+                <p>Enjoy an outdoor concert featuring local bands and food trucks.</p>
+            </div>
+        </section>
+
+        <section id="news" class="newsSection">
+            <h2>Community Bulletin</h2>
+            <article class="newsArticle">
+                <p>Our city council is funding new playground equipment at Maple Park. Volunteers are welcome to help assemble and test the new installation.</p>
+                <p>Local artists are invited to submit murals for the downtown arts walk. Learn more at the next town hall meeting.</p>
+            </article>
+        </section>
+
+        <section id="table" class="adminSection">
+            <h2>Event Admin Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Park Cleanup</td>
+                        <td>June 12</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Farmers Market</td>
+                        <td>June 14</td>
+                        <td>Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td>Summer Concert</td>
+                        <td>June 20</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="contactSection">
+            <h2>Contact & Participation</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com">
+          <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
